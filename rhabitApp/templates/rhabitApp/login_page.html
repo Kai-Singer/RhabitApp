@@ -10,12 +10,26 @@
 <body>
   <div class="login_card">
     <div class="input_card">
+      <h1 class="title">
+        {% if mode == 'signup' %} Sign Up.
+        {% else %} Log In. {% endif %}
+      </h1>
       <form action="#" method="get" class="login_input_form">
         <input type="text" name="uname" id="uname" placeholder="Username" class="login_input_field" required>
+        {% if mode == 'signup' %}
+          <input type="email" name="email" id="email" placeholder="E-Mail" class="login_input_field" required>
+        {% endif %}
         <input type="password" name="pwd" id="pwd" placeholder="Passwort" class="login_input_field" required>
-        <button type="submit" id="submit" class="login_input_button">Log In.</button>
+        <button type="submit" id="submit" class="login_input_button">
+          {% if mode == 'signup' %} Sign Up.
+          {% else %} Log In. {% endif %}
+        </button>
       </form>
+      {% if mode == 'signup' %}
+        <a href="/login/"><div class="login_card_footer">Du hast bereits einen Account? Dann logge dich <strong>hier</strong> ein!</div></a>
+      {% else %}
       <a href="/signup/"><div class="login_card_footer">Noch keinen Account? Registriere dich <strong>hier!</strong></div></a>
+      {% endif %}
     </div>
     <div class="logo_card">
       <img src="{% static 'imgs/RHabit_Schriftzug.png' %}" alt="Rhabit. Logo" class="logo_card_img">

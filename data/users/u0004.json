@@ -1,0 +1,12 @@
+{
+  "name": "TestUser",
+  "email": "test@mail.com",
+  "pwd": "TestPwd123",
+  "creation": "2024-06-30",
+  "bio": "",
+  "picture": false,
+  "followers": [],
+  "following": [],
+  "habits": [],
+  "currentHabit": false
+}
