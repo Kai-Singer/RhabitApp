@@ -1,14 +1,14 @@
-body {
-  font-family: Calibri, sans-serif;
-  margin: 0;
-}
-
 :root {
   --light-gray: #d3d3d3;
   --light-green: #bcd2ad;
   --green: #018001;
-  --light-green-hover: #8fa682;
+  --light-green-hover: #96b87e;
   --white: #fff;
+}
+
+body {
+  font-family: Calibri, sans-serif;
+  margin: 0;
 }
 
 .login_card {

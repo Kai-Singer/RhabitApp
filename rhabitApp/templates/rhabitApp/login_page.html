@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>RHabit. - Log In.</title>
-  <link rel="icon" type="image/png" href="{% static 'imgs/RH-Title.png' %}">
+  <link rel="icon" href="{% static 'imgs/RH-Title.png' %}">
   <link rel="stylesheet" href="{% static 'styles/login.css' %}">
 </head>
 <body>
   <div class="login_card">
     <div class="input_card">
-      <form action="/profile/" method="post" class="login_input_form">
-        <input type="text" name="name" id="name" placeholder="Username" class="login_input_field">
-        <input type="password" name="pwd" id="pwd" placeholder="Passwort" class="login_input_field">
+      <form action="#" method="get" class="login_input_form">
+        <input type="text" name="uname" id="uname" placeholder="Username" class="login_input_field" required>
+        <input type="password" name="pwd" id="pwd" placeholder="Passwort" class="login_input_field" required>
         <button type="submit" id="submit" class="login_input_button">Log In.</button>
       </form>
       <a href="/signup/"><div class="login_card_footer">Noch keinen Account? Registriere dich <strong>hier!</strong></div></a>
