@@ -2,7 +2,10 @@ from django.urls import path
 from rhabitApp import views
 
 urlpatterns = [
-  path('', views.home, name = 'home'),
-  path('login/', views.login, name = 'login'),
-  path('logout/', views.logout, name = 'logout')
+  path('', views.home_page, name = 'home_page'),
+  path('login/', views.login_page, name = 'login_page'),
+  path('signup/', views.signup_page, name = 'signup_page'),
+  path('search/', views.search_page, name = 'search_page'),
+  path('user/', views.user_page, name = 'user_page'),
+  path('profile/', views.profile_page, name = 'profile_page'),
 ]
