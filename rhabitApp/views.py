@@ -4,7 +4,8 @@ def user_page(request):
   return render(request, 'rhabitApp/user_page.html', {})
 
 def profile_page(request):
-  return render(request, 'rhabitApp/user_page.html', { 'private': True })
+  if request.method == "POST":
+    return render(request, 'rhabitApp/user_page.html', { 'private': True })
 
 def home_page(request):
   return render(request, 'rhabitApp/home_page.html', {})
